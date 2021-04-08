@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Vocabb</string>
+    <string name="lets_add_some_words">Let\'s add some words</string>
+    <string name="search_word">Search word</string>
+    <string name="modify">Modify</string>
+    <string name="show_meaning">Show Meaning</string>
+    <string name="text_to_speech">Text to speech</string>
+    <string name="close_screen">close screen</string>
+    <string name="check">Check</string>
+    <string name="give_up">Give up</string>
+    <string name="enter_Word">Enter word</string>
+    <string name="sentence">Sentence</string>
+    <string name="meaning">Meaning*</string>
+    <string name="pronunciation">Pronunciation*</string>
+    <string name="word">Word*</string>
+    <string name="add">Add</string>
+    <string name="add_new_words">Let\'s add new words</string>
+    <string name="total_word_count">Total Word Count: %1$d</string>
+    <string name="login_pref">loginPref</string>
+    <string name="list_pref">listPref</string>
+    <string name="dictionaryURL">https://owlbot.info/api/v4/dictionary/</string>
+    <string name="fetch_details">Fetch Details</string>
+    <string name="add_details">Add Details</string>
+    <string name="delete">Delete</string>
+</resources>

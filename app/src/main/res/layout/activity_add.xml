@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#000"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageview_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="5dp"
+                android:background="@drawable/close"
+                android:contentDescription="@string/close_screen" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/editText_newword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/border"
+            android:hint="@string/word"
+            android:padding="5dp"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:textColor="@color/text"
+            android:textColorHint="@color/hint"
+            android:autofillHints="@string/word"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editText_pronunciation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/border"
+            android:hint="@string/pronunciation"
+            android:padding="5dp"
+            android:textColor="@color/text"
+            android:textColorHint="@color/hint"
+            android:inputType="textPhonetic"
+            android:autofillHints="@string/pronunciation"/>
+
+
+        <EditText
+            android:id="@+id/editText_meaning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="@string/meaning"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:inputType="textMultiLine"
+            android:minHeight="100dp"
+            android:padding="5dp"
+            android:textColor="@color/text"
+            android:textColorHint="@color/hint"
+            android:autofillHints="@string/meaning" />
+
+        <EditText
+            android:id="@+id/editText_sentence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="@string/sentence"
+            android:inputType="textMultiLine"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:minHeight="200dp"
+            android:padding="5dp"
+            android:textColor="@color/text"
+            android:textColorHint="@color/hint"
+            android:autofillHints="@string/sentence" />
+
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:indeterminate="true"
+            android:layout_gravity="center_horizontal"
+            tools:visibility="invisible" />
+
+        <Button
+            android:id="@+id/button_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/elevated"
+            android:text="@string/add"
+            android:textAllCaps="false"
+            android:textColor="@color/text" />
+
+        <Button
+            android:id="@+id/button_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/elevated"
+            android:text="@string/delete"
+            android:visibility="invisible"
+            android:textAllCaps="false"
+            android:textColor="@color/text" />
+
+    </LinearLayout>
+
+</ScrollView>
